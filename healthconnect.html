@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>HealthConnect Clinic No-Show | Angela Iseriehen</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Angela Iseriehen</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="index.html#main">Projects</a></li>
+								<li><a href="index.html#about">About</a></li>
+								<li><a href="index.html#skills">Skills</a></li>
+								<li><a href="resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+								<li><a href="index.html#footer">Contact</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="index.html#main">
+											<h3>Projects</h3>
+											<p>Dashboards and analysis I've built</p>
+										</a>
+									</li>
+									<li>
+										<a href="index.html#about">
+											<h3>About</h3>
+											<p>Who I am and what I do</p>
+										</a>
+									</li>
+									<li>
+										<a href="index.html#skills">
+											<h3>Skills</h3>
+											<p>Power BI, Excel and Python</p>
+										</a>
+									</li>
+									<li>
+										<a href="resume.pdf" target="_blank" rel="noopener">
+											<h3>Resume</h3>
+											<p>View or download my CV</p>
+										</a>
+									</li>
+									<li>
+										<a href="index.html#footer">
+											<h3>Contact</h3>
+											<p>Let's work together</p>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions stacked">
+									<li><a href="mailto:aiseriehen@gmail.com" class="button large fit">Email Me</a></li>
+									<li><a href="https://mail.google.com/mail/?view=cm&to=aiseriehen@gmail.com" target="_blank" rel="noopener" class="button large fit">Email via Gmail (browser)</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="healthconnect.html">HealthConnect Clinic No-Show Analysis</a></h2>
+										<p>Python analysis of 5,000 clinic appointments to find what drives missed visits</p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2026-09-12">September 12, 2026</time>
+										<a href="#" class="author"><span class="name">Angela Iseriehen</span><img src="images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+								<span class="image featured"><img src="images/healthconnect.png" alt="Chart from the HealthConnect no-show analysis" /></span>
+								<h3>The goal</h3>
+									<p>To explore how a fictional clinic could use data and AI to reduce missed patient appointments. This was a multi-week project in the AnalystLab Africa Experience Lab, built around a dataset of roughly 5,000 appointments and 18 columns.</p>
+
+									<h3>What I did</h3>
+									<ul>
+										<li><b>Data quality:</b> checked for duplicates and missing values, and converted dates into proper datetime fields</li>
+										<li><b>Exploratory analysis:</b> compared no-show rates across booking lead time, patient history, reminders and other fields</li>
+										<li><b>KPIs and visuals:</b> defined five KPIs and produced five Matplotlib charts</li>
+										<li><b>Business insights:</b> wrote five recommendations for the clinic</li>
+										<li><b>Collaboration:</b> shared feature recommendations with a data science teammate who was building a prediction model</li>
+									</ul>
+
+									<h3>Key findings</h3>
+									<ul>
+										<li>About 48.5% of appointments were no-shows.</li>
+										<li><b>Booking lead time</b> was the strongest single predictor, with no-show rates ranging from 27.8% to 60.5% across lead time bands.</li>
+										<li><b>Previous no-shows</b> came second: 55.4% of patients with a history of missed visits skipped again, compared with 43.5% of those without.</li>
+										<li>The two effects compound. Across combinations of lead time and prior no-shows, the no-show rate ranged from 21.8% to 67.9%.</li>
+										<li>Missing reminder channel values were not random. They lined up with appointments where no reminder was sent, which matters for both analysis and modelling.</li>
+									</ul>
+
+									<h3>Working across tracks</h3>
+									<p>My teammate's baseline model was a logistic regression with about 63% accuracy and a 0.68 ROC-AUC. I recommended two interaction features: lead time combined with previous no-shows, and reminder channel effectiveness by lead time band. The idea was to capture patterns that a model might treat as independent but that compound in practice.</p>
+
+									<h3>Deliverables</h3>
+									<p>The work is documented in Jupyter notebooks on GitHub, along with a <a href="healthconnect-summary.pdf" target="_blank" rel="noopener">project summary (PDF)</a>.</p>
+								<footer>
+									<ul class="actions">
+										<li><a href="index.html#main" class="button large">Back to Projects</a></li>
+										<li><a href="https://github.com/Angela-825/AnalystLab-Africa-Week4-Week8-Health-Connect-Analysis" target="_blank" rel="noopener" class="button large">View on GitHub</a></li>
+									</ul>
+									<ul class="stats">
+										<li><a href="#">Python</a></li>
+										<li><a href="#">Jupyter</a></li>
+										<li><a href="#">Matplotlib</a></li>
+									</ul>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/angela-iseriehen-052732120" target="_blank" rel="noopener" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/Angela-825" target="_blank" rel="noopener" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://x.com/FunmilayoIseri2" target="_blank" rel="noopener" class="icon brands fa-twitter"><span class="label">X</span></a></li>
+									<li><a href="mailto:aiseriehen@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; 2026 Angela Iseriehen. Design: <a href="http://html5up.net">HTML5 UP</a>.
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

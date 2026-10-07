@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>HR Analytics | Angela Iseriehen</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Angela Iseriehen</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="index.html#main">Projects</a></li>
+								<li><a href="index.html#about">About</a></li>
+								<li><a href="index.html#skills">Skills</a></li>
+								<li><a href="resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+								<li><a href="index.html#footer">Contact</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="index.html#main">
+											<h3>Projects</h3>
+											<p>Dashboards and analysis I've built</p>
+										</a>
+									</li>
+									<li>
+										<a href="index.html#about">
+											<h3>About</h3>
+											<p>Who I am and what I do</p>
+										</a>
+									</li>
+									<li>
+										<a href="index.html#skills">
+											<h3>Skills</h3>
+											<p>Power BI, Excel and Python</p>
+										</a>
+									</li>
+									<li>
+										<a href="resume.pdf" target="_blank" rel="noopener">
+											<h3>Resume</h3>
+											<p>View or download my CV</p>
+										</a>
+									</li>
+									<li>
+										<a href="index.html#footer">
+											<h3>Contact</h3>
+											<p>Let's work together</p>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions stacked">
+									<li><a href="mailto:aiseriehen@gmail.com" class="button large fit">Email Me</a></li>
+									<li><a href="https://mail.google.com/mail/?view=cm&to=aiseriehen@gmail.com" target="_blank" rel="noopener" class="button large fit">Email via Gmail (browser)</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="hr-dashboard.html">HR Analytics Dashboard</a></h2>
+										<p>Five-page Power BI report built from messy HR data, covering headcount, pay, performance and attrition</p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2026-09-09">September 9, 2026</time>
+										<a href="#" class="author"><span class="name">Angela Iseriehen</span><img src="images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+								<span class="image featured"><img src="images/hr-dashboard.png" alt="HR Analytics Dashboard overview page built in Power BI" /></span>
+								<h3>The goal</h3>
+								<p>To practise the full business intelligence workflow on a realistic problem, starting from a deliberately messy HR dataset and ending with an interactive report that answers questions about headcount, pay, performance and attrition.</p>
+
+								<h3>Cleaning the data in Power Query</h3>
+								<ul>
+									<li>Removed duplicate records and trimmed stray whitespace</li>
+									<li>Standardised inconsistent department names</li>
+									<li>Parsed dates written in several formats using a reusable custom M function</li>
+									<li>Handled missing values case by case, depending on what each field meant</li>
+									<li>Corrected salary anomalies</li>
+									<li>Added calculated columns for age, tenure, employment status, age band and tenure band</li>
+								</ul>
+
+								<h3>Modelling and DAX</h3>
+								<p>I built a calendar table marked as the date table, with an active relationship to hire date and an inactive one to termination date, which I switched on in DAX with USERELATIONSHIP. The measures cover headcount (total, active and terminated), attrition rate, average and median salary, average tenure, performance rating, engagement score, hires and terminations.</p>
+
+								<h3>The dashboard</h3>
+								<p>A five-page interactive report with a persistent sidebar for navigation: Overview, Demographics, Compensation, Performance and Engagement, and Attrition Analysis. It uses a custom theme file, and I wrote a separate data quality document to record every cleaning decision.</p>
+
+								<h3>Headline numbers</h3>
+								<p>The overview page shows 180 employees, an average salary of $79K, an average tenure of 6.5 years and an attrition rate of 15.0%.</p>
+								<footer>
+									<ul class="actions">
+										<li><a href="index.html#main" class="button large">Back to Projects</a></li>
+										<li><a href="https://github.com/Angela-825/hr-analytics-dashboard" target="_blank" rel="noopener" class="button large">View on GitHub</a></li>
+									</ul>
+									<ul class="stats">
+										<li><a href="#">Power BI</a></li>
+										<li><a href="#">DAX</a></li>
+										<li><a href="#">Power Query</a></li>
+									</ul>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/angela-iseriehen-052732120" target="_blank" rel="noopener" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/Angela-825" target="_blank" rel="noopener" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://x.com/FunmilayoIseri2" target="_blank" rel="noopener" class="icon brands fa-twitter"><span class="label">X</span></a></li>
+									<li><a href="mailto:aiseriehen@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; 2026 Angela Iseriehen. Design: <a href="http://html5up.net">HTML5 UP</a>.
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
